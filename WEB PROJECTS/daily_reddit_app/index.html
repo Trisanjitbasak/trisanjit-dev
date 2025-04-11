@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News from Reddit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="png" href="news.png"> <!--- flaticon -->
+</head>
+<body>
+    <div class="container">
+        <h1>Latest News from Reddit</h1>
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="java-link">Java</a></li>
+                <li><a href="#" id="python-link">Python</a></li>
+                <li><a href="#" id="c-link">C Programming</a></li>
+                <li><a href="#" id="ai-link">AI</a></li>
+                <li><a href="#" id="robotics-link">Robotics</a></li>
+                <li><a href="#" id="problems-link">Problems</a></li>
+            </ul>
+        </nav>
+        
+        <!-- News Containers -->
+        <div id="java-news" class="news-container"></div>
+        <div id="python-news" class="news-container"></div>
+        <div id="c-news" class="news-container"></div>
+        <div id="ai-news" class="news-container"></div>
+        <div id="robotics-news" class="news-container"></div>
+        <div id="problems-news" class="news-container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search coding problems...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="search-results"></div>
+        </div>
+        
+        <!-- Summary Container -->
+        <div id="summary-container"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

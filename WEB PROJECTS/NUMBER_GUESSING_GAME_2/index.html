@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Number Guessing Game</h1>
+  <p id="message">
+  <label for="guess"><span class="highlight">Guess a number between 1 and 100:</span></label><br></p>
+  <input type="number" id="guess" min="1" max="100"><br>
+  <div class="button-container">
+    <button onclick="checkGuess()" id="submit-button">Submit</button>
+    <button onclick="resetGame()" id="reset-button">Reset</button>
+  </div>
+  <p id="attempts"></p>
+  <script>
+    var numberToGuess = Math.floor(Math.random() * 100) + 1;
+    var attempts = 0;
+
+    function checkGuess() {
+    var guessInput = document.getElementById('guess');
+    var guess = guessInput.value;
+    attempts++;
+    if (guess < numberToGuess) {
+        document.getElementById('message').textContent = "Too low! Try again.";
+    } else if (guess > numberToGuess) {
+        document.getElementById('message').textContent = "Too high! Try again.";
+    } else {
+        // Redirect the user to the congratulations page with the number of attempts as a URL parameter
+        window.location.href = "congratulations.html?attempts=" + attempts;
+    }
+    document.getElementById('attempts').textContent = "Number of attempts: " + attempts;
+    guessInput.value = '';  // Reset the input field
+}
+    function resetGame() {
+      numberToGuess = Math.floor(Math.random() * 100) + 1;
+      attempts = 0;
+      document.getElementById('guess').disabled = false;
+      document.getElementById('message').textContent = '';
+      document.getElementById('attempts').textContent = '';
+      document.getElementById('guess').value = '';
+      document.getElementById('message').classList.remove('highlight', 'lowlight');
+    }
+
+    document.getElementById('guess').addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        checkGuess();
+      }
+    });
+
+    document.getElementById('guess').addEventListener('input', function() {
+      this.value = Math.max(0, Math.min(100, parseInt(this.value)));
+    });
+
+    document.getElementById('guess').focus();
+  </script>
+</body>
+</html>

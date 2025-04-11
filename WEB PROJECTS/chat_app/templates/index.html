@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Chat App</h1>
+            <div id="messages" class="box" style="height: 300px; overflow-y: scroll;">
+                {% for message in messages %}
+                    <p><strong>{{ message.username }}:</strong> {{ message.message }}</p>
+                {% endfor %}
+            </div>
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control">
+                    <input id="username" class="input" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <input id="message" class="input" type="text">
+                </div>
+            </div>
+            <div class="control">
+                <button id="send" class="button is-primary">Send</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

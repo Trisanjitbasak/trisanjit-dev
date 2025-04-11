@@ -1,0 +1,201 @@
+Order ID,Customer Name,Age,Gender,City,Product,Category,Price,Quantity,Total Sales,Purchase Date,Payment Method
+1001,Karen Johnston,23,Male,Los Angeles,Laptop,Electronics,781,2,1562,2024-05-14,Cash on Delivery
+1002,Dr. Kaylee Stevenson,42,Male,Houston,Science Book,Books,165,2,330,2024-10-02,Cash on Delivery
+1003,Kelly Lopez,31,Male,Phoenix,Laptop,Electronics,139,1,139,2024-03-24,PayPal
+1004,Michelle Hayes,57,Female,Houston,Microwave,Home Appliances,968,3,2904,2025-01-17,Cash on Delivery
+1005,Kaitlyn Shannon,25,Male,San Diego,Shoes,Clothing,712,1,712,2025-02-17,Debit Card
+1006,Kyle Garcia,33,Male,Chicago,Novel,Books,526,1,526,2024-05-27,Credit Card
+1007,Brandy Sharp,21,Male,New York,Laptop,Electronics,573,2,1146,2024-08-06,PayPal
+1008,Casey Pierce,24,Male,Phoenix,Novel,Books,356,1,356,2024-03-26,Credit Card
+1009,Brianna Moore,55,Female,San Diego,Tablet,Electronics,555,1,555,2024-07-25,Credit Card
+1010,Eddie Simmons MD,20,Male,Phoenix,Sweater,Clothing,758,5,3790,2024-04-28,Cash on Delivery
+1011,Amy Gonzalez,40,Male,Chicago,Science Book,Books,982,3,2946,2025-01-01,Credit Card
+1012,Tammy Chandler,20,Female,Phoenix,Jacket,Clothing,686,4,2744,2024-08-18,Credit Card
+1013,Gregory Garcia,19,Female,New York,Magazine,Books,97,5,485,2025-02-12,Cash on Delivery
+1014,Justin Garcia,45,Female,San Antonio,Tablet,Electronics,30,3,90,2024-05-03,Credit Card
+1015,Daniel Saunders DVM,18,Female,San Antonio,Laptop,Electronics,540,2,1080,2024-04-16,PayPal
+1016,Joseph Martin,36,Female,San Antonio,Tablet,Electronics,231,3,693,2024-10-20,Debit Card
+1017,Thomas Hammond,64,Male,Dallas,Novel,Books,594,5,2970,2024-06-08,Cash on Delivery
+1018,Vincent Bryant,61,Male,San Antonio,T-Shirt,Clothing,81,2,162,2024-08-26,PayPal
+1019,Kyle Reynolds,58,Male,Los Angeles,Shoes,Clothing,412,4,1648,2024-12-25,Debit Card
+1020,Julia Robles,37,Female,San Jose,Magazine,Books,146,3,438,2024-10-26,Credit Card
+1021,Cynthia Parsons,43,Female,San Diego,Magazine,Books,819,3,2457,2024-05-23,PayPal
+1022,Richard Andrews,58,Male,San Diego,Magazine,Books,57,2,114,2025-03-07,PayPal
+1023,John Adams,31,Female,New York,Headphones,Electronics,461,3,1383,2024-05-14,Cash on Delivery
+1024,Christina Rogers,31,Female,Chicago,Laptop,Electronics,505,5,2525,2024-11-28,Cash on Delivery
+1025,Joshua Oneal,56,Male,San Antonio,Jeans,Clothing,306,1,306,2024-10-13,Debit Card
+1026,Alexander Reed,43,Female,Los Angeles,Headphones,Electronics,689,4,2756,2024-04-16,Cash on Delivery
+1027,Stephen Jones,43,Male,Philadelphia,Tablet,Electronics,327,4,1308,2024-12-21,Credit Card
+1028,Mark Davis,21,Male,San Diego,Science Book,Books,922,2,1844,2024-08-08,Debit Card
+1029,Christina Allen,24,Male,Phoenix,T-Shirt,Clothing,254,1,254,2024-07-28,Cash on Delivery
+1030,Jordan Holland,44,Male,Phoenix,Smartwatch,Electronics,455,3,1365,2024-09-20,Cash on Delivery
+1031,Michael Allen,54,Male,Houston,Smartwatch,Electronics,367,2,734,2024-11-18,Debit Card
+1032,David Simmons,32,Female,Phoenix,Science Book,Books,474,2,948,2025-01-09,Debit Card
+1033,Andrea Pitts,42,Male,Philadelphia,Magazine,Books,115,1,115,2024-06-19,Cash on Delivery
+1034,Derrick Callahan,40,Male,Chicago,Shoes,Clothing,739,3,2217,2024-03-22,Debit Card
+1035,Katherine Mathews,59,Male,San Jose,Washing Machine,Home Appliances,270,3,810,2024-11-11,Cash on Delivery
+1036,William Lewis,27,Female,San Antonio,T-Shirt,Clothing,288,2,576,2024-09-28,Cash on Delivery
+1037,Amanda Rivers,50,Male,Houston,Novel,Books,350,4,1400,2024-07-15,Cash on Delivery
+1038,Reginald Bridges,63,Male,Phoenix,Phone,Electronics,310,5,1550,2024-06-30,Cash on Delivery
+1039,William Hester,35,Male,San Antonio,Magazine,Books,304,3,912,2024-12-30,Credit Card
+1040,Deborah Anderson,37,Male,San Jose,Sweater,Clothing,568,5,2840,2024-03-30,Debit Card
+1041,Dr. Kevin Peters,47,Female,New York,Microwave,Home Appliances,210,1,210,2024-05-15,Cash on Delivery
+1042,Craig Sparks,61,Female,Dallas,Phone,Electronics,265,3,795,2024-05-15,PayPal
+1043,Steven Garza,25,Female,Phoenix,T-Shirt,Clothing,891,3,2673,2024-04-25,PayPal
+1044,Bradley Garcia,48,Male,Dallas,Magazine,Books,503,5,2515,2025-03-04,Cash on Delivery
+1045,Penny Edwards,19,Male,San Antonio,Laptop,Electronics,80,1,80,2024-04-23,Debit Card
+1046,Jacqueline Figueroa,65,Male,Dallas,Vacuum Cleaner,Home Appliances,542,5,2710,2024-09-20,PayPal
+1047,Jeremy Chang,47,Female,Houston,Sweater,Clothing,85,1,85,2024-10-11,Credit Card
+1048,Deborah Hanson,35,Female,Houston,Refrigerator,Home Appliances,254,2,508,2024-07-18,PayPal
+1049,Connor Hampton,61,Male,Phoenix,T-Shirt,Clothing,774,4,3096,2024-09-22,PayPal
+1050,Jesse Rosario,50,Male,Chicago,Jeans,Clothing,196,4,784,2024-12-06,Cash on Delivery
+1051,Kelsey Smith,36,Female,Chicago,Comics,Books,207,1,207,2024-11-01,Debit Card
+1052,Jessica Frazier,50,Male,San Jose,Shoes,Clothing,904,2,1808,2024-12-30,Debit Card
+1053,Logan Fisher,35,Male,Phoenix,Laptop,Electronics,473,2,946,2024-10-24,Credit Card
+1054,Carlos Owens,64,Female,San Jose,Microwave,Home Appliances,25,4,100,2024-10-23,Credit Card
+1055,Frank Browning,33,Male,San Jose,T-Shirt,Clothing,786,2,1572,2024-05-19,Credit Card
+1056,Jennifer Williams,49,Male,New York,Headphones,Electronics,205,1,205,2024-10-15,Cash on Delivery
+1057,Dylan Love,50,Male,San Antonio,Headphones,Electronics,729,5,3645,2024-07-22,Debit Card
+1058,Michael Howard,47,Male,San Antonio,Microwave,Home Appliances,558,1,558,2025-03-06,Debit Card
+1059,James Powers,19,Female,San Antonio,Science Book,Books,464,3,1392,2024-12-21,Credit Card
+1060,Nicole Watkins,36,Female,New York,Air Conditioner,Home Appliances,422,1,422,2025-03-13,Credit Card
+1061,George Hall,21,Male,Houston,Refrigerator,Home Appliances,117,1,117,2025-03-13,Cash on Delivery
+1062,Ruben Adams,18,Female,San Jose,Microwave,Home Appliances,792,5,3960,2024-08-22,PayPal
+1063,Susan Jones,35,Male,Dallas,Vacuum Cleaner,Home Appliances,84,3,252,2024-11-28,PayPal
+1064,Lisa Perry,18,Female,Chicago,Vacuum Cleaner,Home Appliances,494,1,494,2024-05-12,PayPal
+1065,Lori Padilla,27,Male,Los Angeles,Refrigerator,Home Appliances,32,2,64,2024-12-18,Credit Card
+1066,Brianna Haley,45,Female,Dallas,Jacket,Clothing,385,2,770,2025-01-27,Credit Card
+1067,Melissa Cardenas,47,Female,Houston,Magazine,Books,947,3,2841,2024-09-26,Credit Card
+1068,Steven Anderson,21,Female,Chicago,Shoes,Clothing,719,4,2876,2025-01-20,Credit Card
+1069,Sarah Morales,36,Male,Los Angeles,Headphones,Electronics,158,4,632,2024-09-12,PayPal
+1070,Tammy Malone,65,Female,Los Angeles,Shoes,Clothing,459,3,1377,2024-03-16,PayPal
+1071,Lisa Vazquez,38,Female,Phoenix,Phone,Electronics,777,4,3108,2024-06-01,Cash on Delivery
+1072,Kimberly Goodwin,62,Male,San Antonio,Shoes,Clothing,515,1,515,2024-10-20,Debit Card
+1073,Francisco Bennett,46,Male,Houston,Air Conditioner,Home Appliances,315,2,630,2025-02-24,PayPal
+1074,Michael Lee,31,Female,Phoenix,Vacuum Cleaner,Home Appliances,344,4,1376,2024-11-05,Cash on Delivery
+1075,Mr. Stephen Avery II,19,Male,Philadelphia,Smartwatch,Electronics,811,2,1622,2024-10-01,Debit Card
+1076,Bryan Jones,38,Female,San Diego,Magazine,Books,508,5,2540,2024-12-30,Credit Card
+1077,Randall Miller,38,Female,San Antonio,Jeans,Clothing,440,5,2200,2024-09-07,PayPal
+1078,Dr. Thomas Brown,36,Female,Houston,Jacket,Clothing,288,4,1152,2024-08-08,Cash on Delivery
+1079,Jennifer Edwards,18,Male,New York,Refrigerator,Home Appliances,939,3,2817,2024-10-31,Debit Card
+1080,Pamela Robinson,24,Male,Dallas,Smartwatch,Electronics,115,4,460,2024-07-25,PayPal
+1081,Sharon Brooks,50,Female,Phoenix,History Book,Books,665,5,3325,2024-12-03,PayPal
+1082,Brett Griffith,35,Male,San Diego,Shoes,Clothing,761,4,3044,2024-06-16,Credit Card
+1083,Jeremy Martinez,18,Male,Phoenix,Tablet,Electronics,436,3,1308,2025-01-17,Debit Card
+1084,Benjamin Crosby,57,Male,Dallas,Shoes,Clothing,398,4,1592,2024-09-16,Debit Card
+1085,Ashley Galloway,49,Male,San Diego,Headphones,Electronics,216,5,1080,2025-02-06,Credit Card
+1086,James Solomon,22,Male,San Diego,Science Book,Books,121,5,605,2024-10-11,PayPal
+1087,Christopher Jordan,39,Female,Los Angeles,Washing Machine,Home Appliances,689,1,689,2024-09-06,Debit Card
+1088,Sandra Lawson,59,Female,Houston,Jeans,Clothing,613,1,613,2024-05-19,Debit Card
+1089,Kayla Cochran,50,Male,Houston,Smartwatch,Electronics,470,2,940,2024-12-03,Cash on Delivery
+1090,Caitlin Vasquez,33,Female,San Antonio,Comics,Books,582,1,582,2024-04-30,Credit Card
+1091,Timothy Armstrong,35,Female,New York,Sweater,Clothing,339,4,1356,2024-05-06,Cash on Delivery
+1092,Sharon Hull,24,Male,Los Angeles,Jacket,Clothing,597,2,1194,2024-06-11,PayPal
+1093,Janice Williams,52,Female,Houston,Science Book,Books,307,2,614,2024-08-05,PayPal
+1094,Brett Baker,32,Female,New York,Jacket,Clothing,566,2,1132,2024-05-30,PayPal
+1095,Tara Clark,31,Male,Chicago,Tablet,Electronics,559,3,1677,2024-11-23,Credit Card
+1096,Kevin Brown DVM,31,Male,San Diego,Washing Machine,Home Appliances,127,1,127,2024-10-24,Cash on Delivery
+1097,Jessica Munoz,46,Female,Chicago,Jeans,Clothing,766,5,3830,2024-06-09,Credit Card
+1098,Glen Reyes,25,Female,San Antonio,History Book,Books,250,1,250,2024-11-09,Cash on Delivery
+1099,Angela Dorsey,28,Male,Dallas,Smartwatch,Electronics,17,3,51,2024-06-23,PayPal
+1100,Tammy Smith,29,Female,San Jose,Shoes,Clothing,48,1,48,2024-08-15,Debit Card
+1101,Carlos Banks,61,Male,San Diego,Tablet,Electronics,960,1,960,2024-08-01,Cash on Delivery
+1102,David Smith,64,Male,Houston,Jacket,Clothing,248,4,992,2025-01-07,Debit Card
+1103,Lisa Warner,19,Female,San Diego,Headphones,Electronics,130,2,260,2024-08-31,Credit Card
+1104,Mr. Bradley Elliott,20,Male,San Antonio,Washing Machine,Home Appliances,708,5,3540,2024-11-16,Debit Card
+1105,David Burton,36,Male,Los Angeles,Headphones,Electronics,684,1,684,2024-12-31,Cash on Delivery
+1106,Brittany Wagner,43,Male,San Diego,History Book,Books,531,5,2655,2024-07-22,PayPal
+1107,Christopher Thomas,48,Female,Los Angeles,History Book,Books,218,1,218,2025-02-17,Debit Card
+1108,Joshua Martinez,53,Male,Philadelphia,Shoes,Clothing,243,3,729,2024-11-20,Debit Card
+1109,Lawrence Cabrera,31,Male,San Antonio,Vacuum Cleaner,Home Appliances,445,2,890,2024-10-03,Debit Card
+1110,Derrick Becker,28,Male,Houston,Tablet,Electronics,478,4,1912,2024-11-19,Debit Card
+1111,Natalie Taylor,61,Female,Los Angeles,Smartwatch,Electronics,235,3,705,2024-10-19,Cash on Delivery
+1112,Jennifer Wood,63,Male,Dallas,Phone,Electronics,505,5,2525,2024-04-11,PayPal
+1113,Jennifer Gonzalez,60,Male,New York,History Book,Books,625,2,1250,2024-05-23,Debit Card
+1114,Abigail Wade PhD,23,Male,San Antonio,Magazine,Books,440,1,440,2024-12-20,PayPal
+1115,Marvin Francis,24,Male,San Diego,Novel,Books,831,3,2493,2024-08-28,Credit Card
+1116,Robert Hawkins,30,Male,San Antonio,Smartwatch,Electronics,227,2,454,2024-03-14,Credit Card
+1117,Jeffery Harris,34,Male,Phoenix,Magazine,Books,223,4,892,2025-01-30,Debit Card
+1118,Richard Smith,23,Male,San Diego,Magazine,Books,365,2,730,2024-08-10,Credit Card
+1119,David Huang,29,Female,San Antonio,Sweater,Clothing,971,3,2913,2024-06-11,Debit Card
+1120,Michael Cohen,57,Female,Los Angeles,Air Conditioner,Home Appliances,308,5,1540,2024-10-25,PayPal
+1121,Catherine Freeman,19,Male,Philadelphia,Jeans,Clothing,522,4,2088,2024-10-11,Debit Card
+1122,Christopher Cunningham,39,Female,New York,History Book,Books,471,1,471,2024-06-15,Cash on Delivery
+1123,Lisa Lopez,63,Female,San Jose,Science Book,Books,989,4,3956,2024-06-07,Cash on Delivery
+1124,Jamie Stanley DDS,56,Male,San Jose,Novel,Books,286,4,1144,2024-03-26,Debit Card
+1125,Patricia Jacobs,59,Male,San Diego,Vacuum Cleaner,Home Appliances,888,3,2664,2024-03-13,PayPal
+1126,Erin Hubbard,44,Male,Los Angeles,Smartwatch,Electronics,219,1,219,2024-07-15,PayPal
+1127,Gerald Jones,31,Male,New York,Jeans,Clothing,835,5,4175,2024-06-03,PayPal
+1128,Robert Wells,57,Male,Philadelphia,Magazine,Books,525,1,525,2024-12-13,Credit Card
+1129,Lynn Murphy,25,Female,Phoenix,Magazine,Books,199,4,796,2024-03-27,Debit Card
+1130,Angel Douglas,23,Female,Phoenix,Vacuum Cleaner,Home Appliances,797,5,3985,2024-05-21,PayPal
+1131,Ashley Shelton,41,Male,San Jose,Phone,Electronics,142,4,568,2024-12-01,Cash on Delivery
+1132,Fernando Lee,28,Female,New York,History Book,Books,692,3,2076,2025-02-20,Credit Card
+1133,Christina Davis,32,Male,Houston,Headphones,Electronics,502,4,2008,2024-07-30,Credit Card
+1134,Dr. David Allen PhD,27,Male,Chicago,History Book,Books,25,1,25,2024-05-26,PayPal
+1135,Dana Ramos,21,Female,Los Angeles,Laptop,Electronics,904,5,4520,2024-08-24,Debit Card
+1136,Alexander Gallagher,45,Female,Phoenix,Vacuum Cleaner,Home Appliances,726,1,726,2025-02-28,Cash on Delivery
+1137,Monique Thomas,20,Male,Houston,Microwave,Home Appliances,832,2,1664,2024-05-26,Cash on Delivery
+1138,Paul Sims,43,Male,Los Angeles,Washing Machine,Home Appliances,634,3,1902,2024-03-22,PayPal
+1139,Douglas Jordan,46,Female,Dallas,Washing Machine,Home Appliances,44,2,88,2024-09-06,Credit Card
+1140,David Jones,63,Male,Philadelphia,History Book,Books,997,5,4985,2024-10-26,Debit Card
+1141,Kathleen Mccormick DVM,26,Female,New York,Comics,Books,344,5,1720,2024-12-19,Credit Card
+1142,Suzanne Robles,22,Male,San Diego,Jeans,Clothing,403,4,1612,2024-04-12,PayPal
+1143,Carlos Martinez,49,Female,New York,Jacket,Clothing,509,2,1018,2024-11-18,Credit Card
+1144,Joseph Hoffman,39,Female,Phoenix,Sweater,Clothing,788,2,1576,2025-02-10,PayPal
+1145,Frank Flores,27,Female,Philadelphia,Jacket,Clothing,203,1,203,2024-05-14,Cash on Delivery
+1146,Kathleen Wright,64,Female,San Antonio,Laptop,Electronics,929,5,4645,2024-07-15,Debit Card
+1147,Erik Morales,25,Male,New York,Refrigerator,Home Appliances,52,3,156,2024-04-23,Credit Card
+1148,Destiny Cook,21,Female,Dallas,Jacket,Clothing,744,3,2232,2025-02-17,Debit Card
+1149,Christopher Valdez,28,Female,Philadelphia,Jacket,Clothing,586,4,2344,2024-09-07,Debit Card
+1150,Chris Green,53,Female,New York,Jeans,Clothing,351,2,702,2024-08-30,Cash on Delivery
+1151,Patrick Sellers,42,Female,San Jose,Comics,Books,422,2,844,2025-02-06,PayPal
+1152,Holly Brown,33,Female,San Antonio,Jacket,Clothing,629,4,2516,2025-01-02,Debit Card
+1153,Denise Smith,27,Male,Phoenix,Headphones,Electronics,329,2,658,2024-09-30,PayPal
+1154,Michael Simon,46,Female,San Jose,Jeans,Clothing,789,3,2367,2025-03-12,Debit Card
+1155,Jacob Long,22,Female,San Jose,Shoes,Clothing,17,1,17,2025-02-19,Cash on Delivery
+1156,Kathryn Griffin,62,Female,Dallas,Magazine,Books,785,2,1570,2025-02-09,Credit Card
+1157,Jeffrey Gonzalez,62,Female,San Antonio,Microwave,Home Appliances,862,2,1724,2024-11-03,Debit Card
+1158,Brenda Richardson,57,Female,Chicago,History Book,Books,660,2,1320,2024-05-24,Credit Card
+1159,Crystal Fisher,49,Female,Los Angeles,Jacket,Clothing,104,5,520,2024-08-26,PayPal
+1160,Sarah Carroll,25,Female,San Antonio,Washing Machine,Home Appliances,579,3,1737,2024-06-27,PayPal
+1161,Jody Salazar,63,Female,Dallas,Science Book,Books,250,1,250,2024-07-20,PayPal
+1162,Wayne Giles,49,Male,New York,Vacuum Cleaner,Home Appliances,783,5,3915,2024-12-04,PayPal
+1163,Joseph Price,30,Male,New York,Phone,Electronics,562,3,1686,2025-02-11,Cash on Delivery
+1164,Jeffrey Ross,32,Male,Philadelphia,Washing Machine,Home Appliances,505,1,505,2025-01-30,PayPal
+1165,Anne Taylor,41,Male,New York,History Book,Books,237,3,711,2024-05-14,PayPal
+1166,James Hill,50,Female,Los Angeles,Magazine,Books,780,1,780,2025-02-20,Credit Card
+1167,Joshua Dudley,36,Male,Phoenix,Microwave,Home Appliances,893,5,4465,2024-07-20,PayPal
+1168,Jennifer Wells,32,Female,Houston,Phone,Electronics,524,4,2096,2024-05-27,Debit Card
+1169,Zachary Garcia,52,Female,Phoenix,Washing Machine,Home Appliances,375,3,1125,2024-03-15,Cash on Delivery
+1170,Sarah Riggs,56,Female,San Diego,Headphones,Electronics,43,5,215,2024-10-10,Credit Card
+1171,Alexander Phillips,58,Female,San Jose,T-Shirt,Clothing,200,3,600,2024-11-08,PayPal
+1172,Mrs. Rebecca Hall,37,Female,Dallas,Vacuum Cleaner,Home Appliances,254,3,762,2024-11-11,PayPal
+1173,Amber Myers,63,Female,Philadelphia,Washing Machine,Home Appliances,967,2,1934,2024-08-03,Cash on Delivery
+1174,Samantha Patel,27,Male,Dallas,Refrigerator,Home Appliances,985,4,3940,2024-12-03,PayPal
+1175,Robert Hobbs,60,Male,Houston,History Book,Books,592,1,592,2024-12-29,Cash on Delivery
+1176,Nicole Cruz,22,Female,Chicago,Shoes,Clothing,997,1,997,2025-01-06,Debit Card
+1177,James Barker,28,Female,San Jose,Novel,Books,126,3,378,2024-03-23,Cash on Delivery
+1178,David Jones,63,Male,San Antonio,Jeans,Clothing,362,1,362,2025-03-07,PayPal
+1179,Lauren Davis,47,Female,Phoenix,Microwave,Home Appliances,702,3,2106,2025-03-12,Cash on Delivery
+1180,Kevin Campos,38,Male,Chicago,Refrigerator,Home Appliances,842,2,1684,2024-10-01,PayPal
+1181,Scott Rich,63,Male,Dallas,Headphones,Electronics,991,1,991,2025-03-10,Debit Card
+1182,Holly Parker,62,Male,San Diego,Vacuum Cleaner,Home Appliances,166,2,332,2024-06-09,Credit Card
+1183,Anna Hardy PhD,31,Female,Philadelphia,Tablet,Electronics,17,2,34,2024-07-24,Credit Card
+1184,Donald West,48,Female,Phoenix,Laptop,Electronics,691,1,691,2025-01-18,Cash on Delivery
+1185,Michele Thomas,32,Female,Phoenix,Phone,Electronics,722,1,722,2024-07-11,Credit Card
+1186,Carmen Mccarthy,24,Male,San Jose,Shoes,Clothing,359,4,1436,2024-04-10,Debit Card
+1187,Jennifer Santiago,21,Female,New York,Phone,Electronics,276,4,1104,2025-01-05,PayPal
+1188,Heather Schmidt,33,Female,Houston,History Book,Books,408,4,1632,2024-06-05,Cash on Delivery
+1189,Thomas Jackson,19,Female,San Antonio,Jeans,Clothing,293,3,879,2024-07-11,PayPal
+1190,Stacy Hill,65,Male,Los Angeles,Shoes,Clothing,613,4,2452,2024-03-15,Cash on Delivery
+1191,Lindsey Hogan,64,Female,San Diego,Air Conditioner,Home Appliances,959,3,2877,2025-01-27,PayPal
+1192,Sydney Hughes,41,Female,San Antonio,Novel,Books,859,5,4295,2024-08-23,PayPal
+1193,Mr. Aaron Cooper Jr.,56,Female,Chicago,Jeans,Clothing,301,4,1204,2024-10-15,Cash on Delivery
+1194,Thomas Haynes,30,Male,Houston,Smartwatch,Electronics,267,3,801,2024-05-27,Cash on Delivery
+1195,Richard Harper,25,Female,Phoenix,Microwave,Home Appliances,814,3,2442,2024-07-23,Debit Card
+1196,Emily Walker,33,Male,Houston,Tablet,Electronics,220,2,440,2024-05-14,Cash on Delivery
+1197,Melvin Sims,47,Male,New York,Novel,Books,169,4,676,2024-12-26,Credit Card
+1198,Jennifer Serrano,23,Male,San Antonio,Phone,Electronics,299,2,598,2024-04-18,Credit Card
+1199,Ethan Cain,50,Female,San Jose,Jacket,Clothing,420,5,2100,2025-02-18,Cash on Delivery
+1200,Steven Rodriguez,21,Male,Houston,Washing Machine,Home Appliances,725,1,725,2025-01-24,PayPal

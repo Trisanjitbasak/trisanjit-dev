@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branch Table</title>
+</head>
+<body>
+  <h1>Branch Table</h1>
+  {{ table|safe }}
+  <h2>Add Branch</h2>
+  <form action="/add_branch" method="post">
+    <label for="bcode">Branch Code:</label><br>
+    <input type="text" id="bcode" name="bcode"><br>
+    <label for="district">District:</label><br>
+    <input type="text" id="district" name="district"><br>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+    <label for="state">State:</label><br>
+    <input type="text"id="state" name="state"><br>
+    <input type="submit" value="Add Branch">
+  </form>
+  <h2>Remove Branch</h2>
+  <form action="/remove_branch" method="post">
+    <label for="bcode">Branch Code:</label><br>
+    <input type="text" id="bcode" name="bcode"><br>
+    <input type="submit" value="Remove Branch">
+  </form>
+</body>
+</html>

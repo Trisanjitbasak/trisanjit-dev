@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+</head>
+<body>
+    <h1>Employee Table</h1>
+    <table>
+        
+        <tbody>
+            {{ table|safe }}
+        </tbody>
+    </table>
+
+    <h2>Add Employee</h2>
+    <form action="/add_employee" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="phno">Phone Number:</label><br>
+        <input type="text" id="phno" name="phno"><br>
+        <label for="add">Address:</label><br>
+        <input type="text" id="add" name="add"><br>
+        <label for="comp">Company:</label><br>
+        <input type="text" id="comp" name="comp"><br>
+        <label for="sal">Salary:</label><br>
+        <input type="text" id="sal" name="sal"><br>
+        <input type="submit" value="Add Employee">
+    </form>
+    <h2>Remove Employee</h2>
+    <form action="/remove_employee" method="post">
+        <label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+<input type="submit" value="Remove Employee">
+
+</form>
+</body>
+</html>

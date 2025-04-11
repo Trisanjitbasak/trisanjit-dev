@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Branch Table</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Branch Table</h1>
+    <table id="branch-table">
+        <thead>
+            <tr>
+                <th>Branch Code</th>
+                <th>District</th>
+                <th>City</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Add Branch</h2>
+    <form action="/add_branch" method="post">
+        <label for="bcode">BCode:</label>
+        <input type="number" id="bcode" name="bcode"><br>
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district"><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br>
+        <button type="submit">Add</button>
+    </form>
+    <h2>Remove Branch</h2>
+    <form action="/remove_branch" method="post">
+        <label for="bcode">Branch Code:</label>
+        <input type="number" id="bcode" name="bcode"><br>
+        <button type="submit">Remove</button>
+    </form>
+    <script>
+        // Get the branch table body element
+const tableBody = document.querySelector('#branch-table tbody');
+
+// Fetch the branch data from the server and display it in the table
+fetch('/branch_table')
+  .then(response => response.text())
+  .then(data => {
+    // Set the innerHTML of the table body to the branch data
+    tableBody.innerHTML = data;
+  });
+
+// Add an event listener to the form to handle adding a new branch
+document.querySelector('#add-branch-form').addEventListener('submit', event => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the form data
+  const formData = new FormData(event.target);
+
+  // Send a POST request to the server to add the new branch
+  fetch('/add_branch', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    // Display the response from the server
+    alert(data);
+
+    // Reset the form
+    event.target.reset();
+
+    // Fetch the updated branch data and display it in the table
+    fetch('/branch_table')
+      .then(response => response.text())
+      .then(data => {
+        // Set the innerHTML of the table body to the branch data
+        tableBody.innerHTML = data;
+      });
+  });
+});
+
+// Add an event listener to the form to handle removing a branch
+document.querySelector('#remove-branch-form').addEventListener('submit', event => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get the form data
+  const formData = new FormData(event.target);
+
+  // Send a POST request to the server to remove the branch
+  fetch('/remove_branch', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    // Display the response from the server
+    alert(data);
+
+    // Reset the form
+    event.target.reset();
+
+    // Fetch the updated branch data and display it in the table
+    fetch('/branch_table')
+      .then(response => response.text())
+      .then(data => {
+        // Set the innerHTML of the table body to the branch data
+        tableBody.innerHTML = data;
+      });
+  });
+});
+    </script>
+</body>
+
+</html>

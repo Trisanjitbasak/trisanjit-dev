@@ -1,0 +1,390 @@
+#home {
+    position: relative;
+    background: url('banner.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh; /* Set the height to full viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+}
+
+#home h1 {
+    font-size: 6vw; /* Adjust as needed */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Ensure the text is above the overlay */
+}
+
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #121212; /* Darker background color */
+    color: #ffffff; /* Light text color */
+}
+
+a { 
+    color: #4dc3ff; /* Light blue link color */
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: #6ae3ff; /* Lighter blue on hover */
+}
+
+.navbar {
+    background-color: #121212; /* Darker background color for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    padding: 0.5rem 1rem; /* Reduced padding */
+    height: 50px; /* Reduced height */
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    position: absolute; /* Ensure fixed position */
+    top: 50%; /* Position from the top */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.navbar-nav {
+    flex-wrap: nowrap; /* Prevent items from wrapping onto a new line */
+    justify-content: flex-end; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1rem; /* Add some spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-text .btn-outline-light {
+    border-color: #ffffff; /* White border color */
+    color: #ffffff; /* White text color */
+    transition: all 0.3s ease;
+    border-radius: 20px; /* Rounded border */
+    padding: 8px 20px; /* Increased padding */
+}
+
+.navbar-text .btn-outline-light:hover {
+    background-color: #ffffff; /* White background color */
+    color: #000000 !important; /* Black text color */
+    transition: all 0.3s ease;
+}
+
+.neon-strip {
+    height: 2px; /* Adjust thickness of the strip */
+    background-color: #00ff00; /* Neon green color */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00; /* Neon glow effect */
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Full width */
+    top: 56px; /* Adjust distance from the top */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.jumbotron { 
+    background-color: #1f1f1f; /* Darker jumbotron background */
+    color: #ffffff; /* Light text color */
+    padding: 6rem 0; 
+}
+
+.jumbotron h1 { 
+    font-size: 4rem; 
+}
+
+.jumbotron {
+    background-color: #1f1f1f; /* Darker jumbotron background */
+    color: #ffffff; /* Light text color */
+    padding: 6rem 0;
+    margin-bottom: 4rem; /* Add spacing below jumbotron */
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem; /* Add spacing below heading */
+}
+
+#skills {
+    padding: 4rem 0;
+    background-color: #1f1f1f; /* Darker background color for skills section */
+    border-radius: 10px; /* Rounded corners for skills section */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#skills .skill-category {
+    padding: 2rem;
+    color: #ffffff; /* Light text color for skill categories */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+#skills .skill-category .progress {
+    width: 100%; /* Set the width of the progress bars to 100% */
+}
+
+#skills .skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#skills .skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list-item {
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-category:hover .skill-list-item {
+    opacity: 1;
+    transform: scale(1.2); /* Scale the item up to 120% */
+}
+
+
+#skills .progress {
+    height: 10px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#skills .progress-bar {
+    transition: width 0.3s ease;
+}
+
+#skills .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+#skills .progress-bar-animated {
+    transition: width 0.3s ease 0.5s;
+}
+
+#skills .progress-bar-striped.bg-danger {
+    background-color: #ff0000;
+}
+
+#skills .progress-bar-striped.bg-warning {
+    background-color: #ffa500;
+}
+
+.progress-container {
+    padding: 50px 0;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  .progress {
+    height: 20px; /* Increase height of progress bars */
+    margin-bottom: 1rem;
+  }
+  
+  .progress-bar {
+    transition: width 0.3s ease;
+    animation: progress-bar 2s ease-in-out infinite;
+    filter: url(#gooey);
+  }
+  
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+  }
+  
+  .progress-bar-animated {
+    transition: width 0.3s ease 0.5s;
+  }
+  
+  .progress-bar-striped.bg-danger {
+    background-color: #ff0000;
+  }
+  
+  .progress-bar-striped.bg-warning {
+    background-color: #ffa500;
+  }
+  
+  .progress-container p {
+    color: #ffffff; /* Light text color for progress bar labels */
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+.portfolio-item {
+    background-color: #1f1f1f; /* Darker background color for portfolio items */
+    border-radius: 0.5rem; /* Add slight border radius */
+    padding: 2rem;
+    margin-bottom: 2rem; /* Add spacing between portfolio items */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.project-banner {
+    flex: 0 0 auto; /* Let the banner area shrink to fit its content */
+    width: 150px; /* Set a smaller width for the banner area */
+    margin-right: 2rem; /* Add spacing between banner and project details */
+}
+
+.project-banner img {
+    max-width: 100%; /* Make the image fill the banner area width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Add slight border radius to image */
+}
+
+
+.project-details {
+    flex: 1; /* Take up remaining space */
+}
+
+.project-details h3 {
+    color: #ffffff; /* Light text color for project headings */
+}
+
+.project-details p {
+    color: #bfbfbf; /* Lighter text color for project descriptions */
+    margin-bottom: 1rem; /* Add spacing below description */
+}
+
+.project-details .btn-primary {
+    background-color: #0077cc; /* Dark blue button color */
+    border-color: #0077cc; /* Dark blue border color */
+    border-radius: 0; /* Remove border radius */
+    padding: 0.5rem 1.5rem; /* Adjust button padding */
+}
+
+
+
+.container { 
+    padding: 4rem 0; 
+}
+
+h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+    color: #ffffff; /* Light text color for headings */
+}
+
+.text-left { 
+    text-align: left; 
+}
+
+.text-center { 
+    text-align: center; 
+}
+
+.img-fluid { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.form-control { 
+    width: 100%; 
+    background-color: #1a1a1a; /* Darker background color for form inputs */
+    color: #ffffff; /* Light text color for form inputs */
+    border-color: #333333; /* Darker border color */
+}
+
+footer { 
+    background-color: #0d0d0d; /* Even darker background color for footer */
+    color: #bfbfbf; /* Lighter text color for footer */
+    padding: 2rem 0; 
+}
+
+#contact {
+    background-color: #0d0d0d; /* Even darker background color for contact section */
+    padding: 5rem 0;
+    border-top: 2px solid #4dc3ff; /* Light blue border on top */
+    border-bottom: 2px solid #4dc3ff; /* Light blue border on bottom */
+}
+
+#contact h2 {
+    color: #ffffff; /* Light text color for contact section heading */
+    margin-bottom: 3rem; /* Increase spacing below heading */
+}
+
+#contact .form-group {
+    margin-bottom: 2.5rem; /* Increase spacing between form groups */
+}
+
+#contact .form-control {
+    border-color: #333333;
+    background-color: transparent; /* Make form inputs transparent */
+    color: #ffffff; /* Light text color for form inputs */
+    border-radius: 0; /* Remove border radius */
+    border-bottom: 2px solid #4dc3ff; /* Light blue border bottom only */
+    padding: 1rem 0; /* Add padding to form inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+#contact .form-control:focus {
+    border-color: #4dc3ff; /* Light blue border color on focus */
+}
+
+#contact button.btn-primary {
+    background-color: #0077cc; /* Dark blue button color */
+    border-color: #0077cc; /* Dark blue border color */
+    border-radius: 0; /* Remove border radius */
+    padding: 0.75rem 2rem; /* Adjust button padding */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for button */
+}
+
+#contact button.btn-primary:hover {
+    background-color: #005fa6; /* Darker blue button on hover */
+    border-color: #005fa6; /* Darker blue border on hover */
+}
+
+#contact .contact-info {
+    color: #ffffff; /* Light text color */
+    text-align: center; /* Center align text */
+    margin-top: 3rem; /* Add space above contact info */
+}
+
+#contact .contact-info p {
+    margin-bottom: 1rem; /* Add space between paragraphs */
+}
+
+@keyframes progress-bar {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes glow {
+    0% {
+      filter: brightness(100%) saturate(100%);
+    }
+    50% {
+      filter: brightness(200%) saturate(200%);
+    }
+    100% {
+      filter: brightness(100%) saturate(100%);
+    }
+}

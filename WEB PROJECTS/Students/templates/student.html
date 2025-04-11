@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }}</title>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <form method="POST">
+        <ul>
+            {% for month, status in payments.items() %}
+                <li>
+                    {{ month }}: 
+                    <button type="submit" name="month" value="{{ month }}">
+                        {% if status == 'Paid' %}
+                            Paid
+                        {% else %}
+                            Not Paid
+                        {% endif %}
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+    </form>
+    <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>

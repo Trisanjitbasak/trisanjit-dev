@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Company Database</title>
+ <style>
+    /* Add some custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+:root {
+    --primary-color: #264653; /* A dark blue-gray color */
+    --secondary-color: #2a9d8f; /* A teal color */
+    --tertiary-color: #e9c46a; /* A yellow-orange color */
+    --quaternary-color: #f4a261; /* A light orange color */
+    --quinary-color: #e76f51; /* A coral color */
+}
+
+/* Use a linear gradient for the body background */
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #e6e9f0);
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-color: #264653;
+}
+
+/* Center the h1 element and use a different font */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 700;
+    color: #e76f51;
+}
+
+/* Add some box-shadow and transition effects to the form element */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Scale up the form element when hovered */
+form:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+
+/* Style the label element */
+label {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Style the select element */
+select {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-color: #2a9d8f;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 200px;
+}
+
+/* Style the button element */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e9c46a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 100px;
+}
+
+/* Change the button background color when hovered */
+button:hover {
+    background-color: #555;
+    background-color: #e76f51;
+    transform: scale(1.1);
+}
+
+
+ </style>
+</head>
+<body>
+ <h1>Company Database</h1>
+ <form action="/choose" method="post">
+ <label for="choice">Choose a table:</label>
+ <select id="choice" name="choice">
+ <option value="1">Employee</option>
+ </select>
+ <button type="submit">Go</button>
+ </form>
+</body>
+</html>

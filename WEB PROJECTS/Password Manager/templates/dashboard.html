@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwords Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .forms-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-form,
+        #add_form {
+            flex: 1;
+        }
+
+        .search-form {
+            margin-right: 20px;
+        }
+
+        #back_to_home {
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Passwords Dashboard</h1>
+    <div class="forms-container">
+        <form id="search_form" class="search-form">
+            <input type="text" id="search_input" placeholder="Search..." oninput="filterTable()">
+        </form>
+        <form id="add_form" action="/add_password" method="post">
+            <h2>Add New Website/App</h2>
+            <input type="text" id="new_website" name="new_website" placeholder="Website/App Name" required><br>
+            <input type="password" id="new_password" name="new_password" placeholder="Password" required><br>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Website/App Name</th>
+            <th>Password</th>
+            <th>Edit</th>
+            <th>Remove</th>
+        </tr>
+        {% for password in passwords %}
+        <tr>
+            <td>{{ password[0] }}</td>
+            <td>
+                <input type="password" id="password_{{ loop.index }}" value="{{ password[1] }}" disabled>
+                <span class="toggle" onclick="togglePassword('{{ loop.index }}')">👁️</span>
+            </td>
+            <td>
+                <form action="{{ url_for('edit_password', id=loop.index) }}" method="post">
+                    <button type="submit">Edit</button>
+                </form>
+            </td>
+            <td>
+                <form action="{{ url_for('remove_password', id=loop.index) }}" method="post">
+                    <button type="submit" onclick="return confirm('Are you sure you want to remove this password?')">Remove</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>    
+    
+    <!-- Back to home button -->
+    <button id="back_to_home" onclick="window.location.href='/'">Back to Home</button>
+</div>
+<script>
+    function togglePassword(index) {
+        var passwordField = document.getElementById('password_' + index);
+        passwordField.type = (passwordField.type === 'password') ? 'text' : 'password';
+    }
+
+    function filterTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("search_input");
+        filter = input.value.toUpperCase();
+        table = document.querySelector("table");
+        tr = table.getElementsByTagName("tr");
+        for (i = 1; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function removeRow(website) {
+        if (confirm("Are you sure you want to remove " + website + "?")) {
+            var rowToRemove = document.querySelector("table tr td:first-child");
+            rowToRemove.parentNode.parentNode.removeChild(rowToRemove.parentNode);
+            // You can add AJAX request here to remove the entry from the server-side database
+        }
+    }`
+</script>
+</body>
+</html>

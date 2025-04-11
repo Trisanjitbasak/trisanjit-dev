@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Congratulations</title>
+    <style>
+        #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+        video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#play-again-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+h1, p {
+    z-index: 1;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            letter-spacing: 3px;
+            color: #00bfff;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #333;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #message {
+            animation: fadeIn 2s ease-in-out;
+            color: #fff;
+        }
+
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 40px auto;
+            cursor: pointer;
+            width: 200px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:hover {
+            animation: scale 0.3s ease-in-out forwards;
+            background-color: #3e8e41;
+        }
+        
+        .blink {
+            animation: blink 1s steps(1, end) infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        #play-again-button {
+            display: block;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 50px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        #play-again-button:hover {
+            background-color: #3e8e41;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <h1>Congratulations!</h1>
+    <p id="message">You guessed the number in <span class="blink">{{attempts}}</span> attempts!</p>
+    <button id="play-again-button" onclick="location.href='index.html'">Play Again</button>
+    <script>
+        // Get the number of attempts from the URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const attempts = urlParams.get('attempts');
+
+// Replace the {{attempts}} variable with the actual number of attempts
+document.getElementById('message').innerHTML = "You guessed the number in <span class='blink'>" + attempts + "</span> attempts!";
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+BoxLayout:
+    orientation: "vertical"
+
+    MDToolbar:
+        title: "Notes App"
+        md_bg_color: 0, 0.5, 1, 1
+        specific_text_color: 1, 1, 1, 1
+
+    ScrollView:
+        MDList:
+            id: notes_list
+
+    MDBottomAppBar:
+        MDToolbar:
+            icon: "plus"
+            type: "bottom"
+            on_action_button: app.add_note_dialog()

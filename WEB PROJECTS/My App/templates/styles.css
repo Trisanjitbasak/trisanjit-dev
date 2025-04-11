@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+   }
+   
+   form {
+    margin-top: 50px;
+   }
+   
+   select {
+    padding: 10px;
+   }
+   
+   button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+   }

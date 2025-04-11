@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <link rel="icon" href="C:\dev\Trisanjit\PYTHON\NUMBER_GUESSING_GAME\assets\web_logo.png">
+    <style>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    color: #007B9A;  /* Initial color (lighter) */
+  }
+  100% {
+    opacity: 1;
+    color: #00506b;  /* Final color (darker) */
+  }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #00506b;  /* Darker color */
+    text-align: center;
+    margin-top: 50px;
+    animation: 2s ease-in 0s 1 fadeIn;  /* Fade-in animation */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #007B9A;;
+}
+
+p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popup {
+            visibility: hidden;
+            opacity: 0;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f8f9fa;  /* Light gray */
+            color: #495057;  /* Dark gray */
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;  /* Medium gray */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+            text-align: center;  /* Center the text */
+        }
+
+        .popup.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup h2 {
+            color: #007bff;  /* Blue */
+        }
+
+    </style>
+     
+</head>
+<body>
+    <h1 id="heading" class="{{ 'slideInFromLeft' if animate else '' }}">Number Guessing Game</h1>
+    <form id="form" method="POST" class="{{ 'fadeIn' if animate else '' }}">
+        <input type="hidden" name="number_to_guess" value="{{ number_to_guess }}">
+        <label for="guess">Guess a number between 1 and 100:</label><br>
+        <input type="number" id="guess" name="guess" min="1" max="100" autofocus><br>
+        <input type="submit" value="Submit">
+        <input type="submit" name="reset" value="Reset">
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    {% if attempts %}
+    <p>Number of attempts: {{ attempts }}</p>
+    {% endif %}
+    <div id="popup" class="popup">
+        <h2>Congratulations!</h2>
+    </div>
+    <script>
+        var message = "{{ message }}";
+        if (message.startsWith("Congratulations")) {
+            var popup = document.getElementById("popup");
+            popup.classList.add("show");
+            setTimeout(function() {
+                popup.classList.remove("show");
+            }, 3000);  // The pop-up will be shown for 3 seconds
+        }
+    </script>
+</body>
+</html>
