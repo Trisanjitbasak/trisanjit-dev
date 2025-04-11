@@ -1,2 +1,5 @@
 Trisanjit/
 Trisanjit/
+*.pyc
+__pycache__/
+.env
